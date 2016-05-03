@@ -29,9 +29,9 @@ func main() {
 
 	pkgName := os.Args[1]
 
-	if !strings.Contains(pkgName, ".") {
-		pkgName = "com.ubuntu.snappy." + pkgName
-	}
+	//if !strings.Contains(pkgName, ".") {
+	//	pkgName = "com.ubuntu.snappy." + pkgName
+	//}
 
 	u, err := storeUrl.Parse(pkgName)
 	if err != nil {
